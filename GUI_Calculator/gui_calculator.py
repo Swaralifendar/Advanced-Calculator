@@ -74,7 +74,7 @@ for (text, row, col) in buttons:
     if text == '=':
         button = tk.Button(root, text=text, font=("Arial", 18), command=calculate)
     elif text == 'C':
-        button = tk.Button(root, text=text, font=("Arial", 18), command=clear_display)
+        button = tk.Button(root, text=text, font=("Arial", 18), bg="Yellow", fg="black", command=clear_display)
     elif text == '√':
         button = tk.Button(root, text=text, font=("Arial", 18), command=square_root)
     elif text in ['sin', 'cos', 'tan']:
